@@ -14,6 +14,8 @@
 		A3A14F121BA5E7B50041D71D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A14F111BA5E7B50041D71D /* Images.xcassets */; };
 		A3A14F151BA5E7B50041D71D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3A14F131BA5E7B50041D71D /* LaunchScreen.xib */; };
 		A3A14F211BA5E7B50041D71D /* AndroidScrollTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A14F201BA5E7B50041D71D /* AndroidScrollTests.swift */; };
+		A3A14F2B1BA5E8260041D71D /* AndroidScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A14F2A1BA5E8260041D71D /* AndroidScroll.swift */; };
+		A3A14F2E1BA5E8680041D71D /* AndroidScrollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A14F2D1BA5E8680041D71D /* AndroidScrollCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		A3A14F1A1BA5E7B50041D71D /* AndroidScrollTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AndroidScrollTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A14F1F1BA5E7B50041D71D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3A14F201BA5E7B50041D71D /* AndroidScrollTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidScrollTests.swift; sourceTree = "<group>"; };
+		A3A14F2A1BA5E8260041D71D /* AndroidScroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AndroidScroll.swift; sourceTree = "<group>"; };
+		A3A14F2D1BA5E8680041D71D /* AndroidScrollCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AndroidScrollCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		A3A14F041BA5E7B50041D71D /* AndroidScroll */ = {
 			isa = PBXGroup;
 			children = (
+				A3A14F2C1BA5E82B0041D71D /* Scroll */,
 				A3A14F071BA5E7B50041D71D /* AppDelegate.swift */,
 				A3A14F0C1BA5E7B50041D71D /* ViewController.swift */,
 				A3A14F0E1BA5E7B50041D71D /* Main.storyboard */,
@@ -113,6 +118,15 @@
 				A3A14F1F1BA5E7B50041D71D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3A14F2C1BA5E82B0041D71D /* Scroll */ = {
+			isa = PBXGroup;
+			children = (
+				A3A14F2A1BA5E8260041D71D /* AndroidScroll.swift */,
+				A3A14F2D1BA5E8680041D71D /* AndroidScrollCell.swift */,
+			);
+			name = Scroll;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +178,7 @@
 				TargetAttributes = {
 					A3A14F011BA5E7B50041D71D = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 8FMTT8DQ4W;
 					};
 					A3A14F191BA5E7B50041D71D = {
 						CreatedOnToolsVersion = 6.4;
@@ -217,6 +232,8 @@
 			files = (
 				A3A14F0D1BA5E7B50041D71D /* ViewController.swift in Sources */,
 				A3A14F0B1BA5E7B50041D71D /* AndroidScroll.xcdatamodeld in Sources */,
+				A3A14F2B1BA5E8260041D71D /* AndroidScroll.swift in Sources */,
+				A3A14F2E1BA5E8680041D71D /* AndroidScrollCell.swift in Sources */,
 				A3A14F081BA5E7B50041D71D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,7 +363,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AndroidScroll/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -356,7 +375,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AndroidScroll/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
